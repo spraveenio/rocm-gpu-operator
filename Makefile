@@ -177,7 +177,7 @@ docker/shell: docker-build-env ## Bring up and attach to a container that has de
 		"cd /gpu-operator && git config --global --add safe.directory /gpu-operator && bash"
 
 .PHONY: all
-all: generate manager manifests helm-k8s bundle-build docker-build
+all: generate manager manifests helm-k8s bundle-build docker-build docker-build-utils
 
 ##@ General
 
